@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y2K Grunge Player</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts for that Y2K / Chrome vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="player">
+    <h1 class="logo">Y2K//PLAYER</h1>
+    <h2 id="song-title">No Track Loaded</h2>
+
+    <audio id="audio"></audio>
+
+    <div class="controls">
+      <button id="prev" class="btn">⏮️</button>
+
+      <button id="play" class="btn play-btn">
+        <img src="assets/images/screw-nail.png" alt="Play" class="nail-icon">
+      </button>
+
+      <button id="next" class="btn">⏭️</button>
+    </div>
+
+    <div class="progress-container">
+      <div id="progress"></div>
+    </div>
+
+    <div class="upload-section">
+      <label for="file-input" class="upload-btn">+ ADD YOUR MP3</label>
+      <input type="file" id="file-input" accept="audio/mp3,audio/mpeg" hidden>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
